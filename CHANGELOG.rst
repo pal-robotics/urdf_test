@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2017-07-17)
+------------------
 * Fix installation rules
 * Contributors: davidfernandez
 
