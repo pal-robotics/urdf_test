@@ -1,0 +1,7 @@
+<launch>
+    <arg name="get_description" default="false"/>
+
+    <param unless="$(arg get_description)" name="robot_description" value="None"/>
+
+    <test test-name="test_urdf" pkg="urdf_test" type="test_urdf"/>
+</launch>
