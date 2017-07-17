@@ -18,14 +18,14 @@ catkin_package(
 ###########
 include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
 
-add_rostest_gtest(${PROJECT_NAME} test/test_urdf.test src/test_urdf.cpp)
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
+add_rostest_gtest(test_urdf test/test_urdf.test src/test_urdf.cpp)
+target_link_libraries(test_urdf ${catkin_LIBRARIES})
 
 #############
 ## Install ##
 #############
 
-install(TARGETS ${PROJECT_NAME}
+install(TARGETS test_urdf
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
