@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(urdf_test)
 
-find_package(catkin REQUIRED COMPONENTS roscpp)
+find_package(catkin REQUIRED COMPONENTS roscpp rostest)
 
 ###################################
 ## catkin specific configuration ##
@@ -16,17 +16,22 @@ catkin_package(
 ###########
 ## Build ##
 ###########
+include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
+
+add_rostest_gtest(${PROJECT_NAME} test/test_urdf.test src/test_urdf.cpp)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 
 #############
 ## Install ##
 #############
 
-#############
-## Testing ##
-#############
+install(TARGETS ${PROJECT_NAME}
+#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
-if(CATKIN_ENABLE_TESTING)
-  find_package(rostest REQUIRED)
-  add_rostest_gtest(test_urdf test/test_urdf.test test/test_urdf.cpp)
-  target_link_libraries(test_urdf ${catkin_LIBRARIES})
-endif()
+install(
+    DIRECTORY test
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
