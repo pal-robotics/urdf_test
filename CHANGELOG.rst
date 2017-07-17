@@ -2,7 +2,7 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2017-07-17)
+------------------
 * Initial import
 * Contributors: davidfernandez
