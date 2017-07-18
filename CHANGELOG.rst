@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.3 (2017-07-18)
+------------------
 * Rewrite in python for simplicity
 * Fix dependencies
 * Contributors: davidfernandez
