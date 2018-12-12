@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.4 (2018-12-12)
+------------------
 * Merge branch 'add-test-suffix' into 'master'
   Add test suffix
   See merge request qa/urdf_test!2
