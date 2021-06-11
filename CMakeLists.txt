@@ -1,27 +1,26 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(urdf_test)
 
-find_package(catkin REQUIRED COMPONENTS rospy)
+find_package(ament_cmake_auto REQUIRED)
 
-catkin_python_setup()
+# PAL Robotics stricter build flags, other developers should not worry about this
+find_package(ament_cmake_pal QUIET)
 
-###################################
-## catkin specific configuration ##
-###################################
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES urdf_test
-#  CATKIN_DEPENDS other_catkin_pkg
-#  DEPENDS gtest
-)
+ament_auto_find_build_dependencies()
 
-#############
-## Install ##
-#############
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+
 install(PROGRAMS
-    scripts/test_urdf.py
-    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+  scripts/test_urdf.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY launch
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+# Install Python modules
+ament_python_install_package(${PROJECT_NAME})
+
+ament_auto_package()
