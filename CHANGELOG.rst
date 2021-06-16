@@ -2,6 +2,11 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* ROS2 migration
+* Contributors: Victor Lopez
+
 1.0.4 (2018-12-12)
 ------------------
 * Merge branch 'add-test-suffix' into 'master'
