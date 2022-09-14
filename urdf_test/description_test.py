@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from launch import LaunchDescription
-import launch_testing
-import unittest
 import os
+import unittest
 
+from launch import LaunchDescription
 from launch_ros.actions import Node
+import launch_testing
 
 
 def generate_urdf_test_description(launch_file_action):
