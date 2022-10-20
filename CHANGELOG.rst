@@ -2,6 +2,26 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request qa/urdf_test!7
+* clean ros1 files
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request qa/urdf_test!6
+* update copyright
+* Merge branch 'update_maintainers' into 'humble-devel'
+  update maintainers
+  See merge request qa/urdf_test!5
+* update maintainers
+* Merge branch 'tests' into 'humble-devel'
+  fix linter errors
+  See merge request qa/urdf_test!4
+* linters
+* Contributors: Jordan Palacios, Noel Jimenez
+
 2.0.0 (2021-06-16)
 ------------------
 * ROS2 migration
