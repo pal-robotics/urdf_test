@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2022-10-20)
+------------------
 * Merge branch 'cleanup' into 'humble-devel'
   Cleanup
   See merge request qa/urdf_test!7
