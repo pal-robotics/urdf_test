@@ -2,6 +2,12 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add website tag
+* Remove pal flags dependency
+* Contributors: Noel Jimenez
+
 2.0.1 (2022-10-20)
 ------------------
 * Merge branch 'cleanup' into 'humble-devel'
