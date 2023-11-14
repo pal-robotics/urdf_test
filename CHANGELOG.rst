@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.2 (2023-11-14)
+------------------
 * Add website tag
 * Remove pal flags dependency
 * Contributors: Noel Jimenez
