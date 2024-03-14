@@ -15,7 +15,7 @@
 
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSDurabilityPolicy
+from rclpy.qos import DurabilityPolicy
 from rclpy.qos import QoSProfile
 
 
@@ -30,7 +30,7 @@ class MinimalSubscriber(Node):
 
         qos_profile = QoSProfile(
             depth=1,
-            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL)
+            durability=DurabilityPolicy.TRANSIENT_LOCAL)
         self.subscription = self.create_subscription(
             String,
             'robot_description',
