@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.3 (2024-03-20)
+------------------
 * Fix deprecated QOS warning
 * Contributors: David ter Kuile
 
