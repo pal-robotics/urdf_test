@@ -7,6 +7,8 @@ ament_auto_find_build_dependencies()
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
+
+  ament_add_pytest_test(test_xacro_test tests/test_xacro_test.py)
 endif()
 
 

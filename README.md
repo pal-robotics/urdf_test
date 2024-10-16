@@ -24,7 +24,30 @@ __all__ = ('TestDescriptionPublished', 'TestSuccessfulExit')
 def generate_test_description():
     return generate_urdf_test_description(
         include_launch_py_description(
-            'pmb2_description', ['launch', 'robot_state_publisher.launch.py']),         
-    )                                        
+            'pmb2_description', ['launch', 'robot_state_publisher.launch.py']),
+    )
 ```
 
+# xacro_test
+
+As a faster alternative, the xacro can get checked directly.
+`define_xacro_test` takes a xacro file path and a number of `DeclareLaunchArgument` arguments,
+which are used to form the test matrix (cartesian product).
+
+
+```python
+from pathlib import Path
+
+from ament_index_python.packages import get_package_share_directory
+from pmb2_description.launch_arguments import PMB2Args
+
+from urdf_test.xacro_test import define_xacro_test
+
+xacro_file_path = Path(
+    get_package_share_directory('pmb2_description'),
+    'robots',
+    'pmb2.urdf.xacro',
+)
+
+test_xacro = define_xacro_test(xacro_file_path, PMB2Args.laser_model, PMB2Args.add_on_module)
+```
