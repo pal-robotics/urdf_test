@@ -86,7 +86,7 @@ def gen_choices_product(*choices):
 def parametrize_choices(*choices):
     """Generate pytest parameters for the cartesian product of the choices with pretty ids."""
     for choice in gen_choices_product(*choices):
-        yield pytest.param(choice, id=', '.join(f"{k}={v}" for k, v in choice.items()))
+        yield pytest.param(choice, id=' '.join(f"{k}:={v}" for k, v in choice.items()))
 
 
 def define_xacro_test(xacro_file_path, *choices):

@@ -96,10 +96,10 @@ def test_define_xacro_test():
     assert mark.args[0] == 'params'
     params = {p.id: p.values for p in mark.args[1]}
     assert params == {
-        'a=8, b=1': ({'a': 8, 'b': 1},),
-        'a=8, b=2': ({'a': 8, 'b': 2},),
-        'a=9, b=1': ({'a': 9, 'b': 1},),
-        'a=9, b=2': ({'a': 9, 'b': 2},)
+        'a:=8 b:=1': ({'a': 8, 'b': 1},),
+        'a:=8 b:=2': ({'a': 8, 'b': 2},),
+        'a:=9 b:=1': ({'a': 9, 'b': 1},),
+        'a:=9 b:=2': ({'a': 9, 'b': 2},)
     }
 
 
