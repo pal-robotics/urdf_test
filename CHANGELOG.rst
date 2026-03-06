@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.1 (2026-03-06)
+------------------
 * Fix ament_flake8 quoting and import-order
 * Format xacro_test IDs as xacro argument lists
 * Contributors: Mathias Lüdtke, Noel Jimenez
