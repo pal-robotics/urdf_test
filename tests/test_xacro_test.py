@@ -15,14 +15,14 @@
 import subprocess
 import tempfile
 
-import pytest
-import xacro
 
 from launch.actions import DeclareLaunchArgument
+import pytest
 from urdf_test.xacro_test import (check_urdf,
                                   check_xacro_file,
                                   define_xacro_test,
                                   gen_choices_product)
+import xacro
 
 
 @pytest.mark.parametrize(
