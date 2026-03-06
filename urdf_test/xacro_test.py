@@ -12,18 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from collections.abc import Iterable, Sequence
 import itertools
 import subprocess
 
 import pytest
-import xacro
 
-from collections.abc import Iterable, Sequence
+import xacro
 
 
 def check_urdf(urdf, check=True, stdout=subprocess.DEVNULL, **kwargs):
     """Run check_urdf on the given URDF string. Output is redirected to /dev/null by default."""
-    return subprocess.run(['check_urdf', "/dev/stdin"],
+    return subprocess.run(['check_urdf', '/dev/stdin'],
                           check=check,
                           text=True, input=urdf,
                           stdout=stdout,
@@ -86,12 +86,12 @@ def gen_choices_product(*choices):
 def parametrize_choices(*choices):
     """Generate pytest parameters for the cartesian product of the choices with pretty ids."""
     for choice in gen_choices_product(*choices):
-        yield pytest.param(choice, id=' '.join(f"{k}:={v}" for k, v in choice.items()))
+        yield pytest.param(choice, id=' '.join(f'{k}:={v}' for k, v in choice.items()))
 
 
 def define_xacro_test(xacro_file_path, *choices):
     """Generate a pytest test that checks the given xacro file for the given choices."""
-    @pytest.mark.parametrize("params", parametrize_choices(*choices))
+    @pytest.mark.parametrize('params', parametrize_choices(*choices))
     def test_urdf(params):
         check_xacro_file(xacro_file_path, params)
     return test_urdf
