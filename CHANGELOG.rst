@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.2 (2026-06-11)
+------------------
 * Remove unused setup.py
 * Bump cmake version to 3.10
 * Contributors: Noel Jimenez
