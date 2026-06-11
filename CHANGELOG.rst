@@ -2,6 +2,12 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove unused setup.py
+* Bump cmake version to 3.10
+* Contributors: Noel Jimenez
+
 2.1.1 (2026-03-06)
 ------------------
 * Fix ament_flake8 quoting and import-order
