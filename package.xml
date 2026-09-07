@@ -15,7 +15,7 @@
 
   <depend>rclpy</depend>
 
-  <exec_depend>liburdfdom-tools</exec_depend>
+  <exec_depend>urdfdom</exec_depend>
 
   <test_depend>ament_cmake_pytest</test_depend>
   <test_depend>ament_lint_auto</test_depend>
