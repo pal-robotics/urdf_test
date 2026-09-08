@@ -2,6 +2,11 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use urdfdom as a exec dependency
+* Contributors: Sai Kishor Kothakota
+
 2.1.2 (2026-06-11)
 ------------------
 * Remove unused setup.py
