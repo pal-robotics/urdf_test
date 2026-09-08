@@ -2,8 +2,8 @@
 Changelog for package urdf_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.3 (2026-09-08)
+------------------
 * Use urdfdom as a exec dependency
 * Contributors: Sai Kishor Kothakota
 
